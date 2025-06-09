@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Ce code permet de lire un fichier Excel contenant des adresses e-mail, puis d'envoyer automatiquement un e-mail personnalisé à chaque contact avec votre CV en pièce jointe et un paragraphe de présentation.",
+  "main": "sendEmails.js",
+  "type": "module",
+  "scripts": {
+    "start": "node sendEmails.js",
+    "dev": "nodemon sendEmails.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.1",
+    "nodemailer": "^7.0.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
