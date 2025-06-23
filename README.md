@@ -103,11 +103,11 @@ Place your Excel file (`Tunisian_Companies_Emails_Combined.xlsx`) in the backend
 
 ## 🚀 Running the Application
 
-### Start the Backend Server
+### Start project 
 
 ```bash
 cd backend
-node sendEmails.js
+npm run start 
 ```
 
 The server will start on `http://localhost:5000`
@@ -117,12 +117,6 @@ Available endpoints:
 - `GET /health` - Health check
 - `GET /stats` - Email statistics
 
-### Start the Frontend Development Server
-
-```bash
-cd frontend
-npm run dev
-```
 
 The React app will start on `http://localhost:5173`
 

@@ -5,13 +5,15 @@
   "main": "sendEmails.js",
   "type": "module",
   "scripts": {
-    "start": "node sendEmails.js",
-    "dev": "nodemon sendEmails.js"
+    "dev": "nodemon sendEmails.js",
+    "client": "cd ../frontend && npm run dev",
+    "start": "concurrently \"npm run dev\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^9.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
